@@ -12,7 +12,9 @@ style=" background-repeat:no-repeat ;
 background-size:100% 100%;
 background-attachment: fixed;"
 >
-<audio controls>yhyl.wav</audio>
+<audio controls>
+  <source src="yhyl.wav" type="audio/wav">
+</audio>
 <title>长按点赞，一键三连</title>
     <link rel="stylesheet" href="/live2d/css/live2d.css" />
 </head>
@@ -20,7 +22,7 @@ background-attachment: fixed;"
 
 <div id="landlord">
     <div class="message" style="opacity:0"></div>
-    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+  <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
 	<div id="sing"></div>
     <div class="hide-button">隐藏</div>
 	<div class="sing-button" id="sing-button" onclick="getsong()">Sing</div>
