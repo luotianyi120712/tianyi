@@ -19,11 +19,13 @@ background-attachment: fixed;"
 
 <div id="landlord">
     <div class="message" style="opacity:0">
-      <canvas id="live2d" width="500" height="500" class="live2d" style="position: fixed; opacity: 1; left: -110px; bottom: -125px; z-index: 99999; pointer-events: none;"></canvas>
+      <div class="message" style="opacity:0">
+        <canvas id="live2d2" width="280" height="250" class="live2d"></canvas>
+      </div>
     </div>
     <div id="sing"></div>
     <div class="hide-button">隐藏    </div>
-	<div class="sing-button" id="sing-button" onclick="getsong()">Sing</div>
+	<div class="sing-button" id="sing-button" onclick="getsong()">Sing	</div>
 </div>
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript">
@@ -38,8 +40,11 @@ background-attachment: fixed;"
 <!-- Live2DCubismCore script -->
 <script src="https://luotianyi120712.github.io/tianyi/live2dcubismcore.js"></script>
 <!-- Build script -->
-<script src="https://luotianyi120712.github.io/tianyi/bundle.js"></script>
-<canvas id="live2d2" width="280" height="250" class="live2d"></canvas>
+<script src="https://luotianyi120712.github.io/tianyi/bundle.js"></script><span class="message" style="opacity:0">
+</span>
+<span class="message" style="opacity:0">
+<canvas id="live2d" width="500" height="500" class="live2d" style="position: fixed; opacity: 1; left: -110px; bottom: -125px; z-index: 99999; pointer-events: none;"></canvas>
+</span>
 <audio controls>
   <source src="yhyl.wav" type="audio/wav">
 </audio>
