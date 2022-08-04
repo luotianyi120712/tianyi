@@ -12,19 +12,17 @@ style=" background-repeat:no-repeat ;
 background-size:100% 100%;
 background-attachment: fixed;"
 >
-<audio controls>
-  <source src="yhyl.wav" type="audio/wav">
-</audio>
 <title>长按点赞，一键三连</title>
     <link rel="stylesheet" href="/live2d/css/live2d.css" />
 </head>
 <body>
 
 <div id="landlord">
-    <div class="message" style="opacity:0"></div>
-  <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
-	<div id="sing"></div>
-    <div class="hide-button">隐藏</div>
+    <div class="message" style="opacity:0">
+      <canvas id="live2d" width="500" height="500" class="live2d" style="position: fixed; opacity: 1; left: -110px; bottom: -125px; z-index: 99999; pointer-events: none;"></canvas>
+    </div>
+    <div id="sing"></div>
+    <div class="hide-button">隐藏    </div>
 	<div class="sing-button" id="sing-button" onclick="getsong()">Sing</div>
 </div>
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
@@ -41,8 +39,10 @@ background-attachment: fixed;"
 <script src="https://luotianyi120712.github.io/tianyi/live2dcubismcore.js"></script>
 <!-- Build script -->
 <script src="https://luotianyi120712.github.io/tianyi/bundle.js"></script>
-<canvas id="live2d" width="500" height="500" class="live2d" style="position: fixed; opacity: 1; left: -110px; bottom: -125px; z-index: 99999; pointer-events: none;"></canvas>
-
+<canvas id="live2d2" width="280" height="250" class="live2d"></canvas>
+<audio controls>
+  <source src="yhyl.wav" type="audio/wav">
+</audio>
 <script type="text/javascript">
   var resourcesPath = 'https://cdn.jsdelivr.net/gh/x66ccff/lty-lv2d-v3@v1.2/'; // 指定资源文件（模型）保存的路径
   var backImageName = ''; // 指定背景图片
