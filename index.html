@@ -169,13 +169,13 @@ alert("点一下又不会怀孕");
 <body>
 
 <div id="landlord">
-    <div class="message" style="opacity: 1;">弱水三千，我只取一瓢饮。</div>
+    <div class="message" style="opacity:0"></div>
     <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
 	<div id="sing"></div>
     <div class="hide-button" style="display: none;">隐藏</div>
 	<div class="sing-button" id="sing-button" onclick="getsong()" style="display: none;">Sing</div>
 </div>
-<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript">
     var message_Path = '/live2d/'
     var home_Path = 'https://luotianyi120712.github.io/tianyi/'//此处修改成自己的域名
@@ -192,8 +192,8 @@ alert("点一下又不会怀孕");
 <canvas id="live2d" width="500" height="500" class="live2d" style="position: fixed; opacity: 1; left: -110px; bottom: -125px; z-index: 99999; pointer-events: none;"></canvas>
 
 <script type="text/javascript">
-  var resourcesPath = 'https:/https://luotianyi120712.github.io/tianyi/lty-lv2d-v3/'; // 指定资源文件（模型）保存的路径
-  var backImageName = './background.png'; // 指定背景图片
+  var resourcesPath = 'https://cdn.jsdelivr.net/gh/x66ccff/lty-lv2d-v3@v1.2/'; // 指定资源文件（模型）保存的路径
+  var backImageName = ' '; // 指定背景图片
   var modelDir = ['Hiyori']; // 指定需要加载的模型
   initDefine(resourcesPath, backImageName, modelDir); // 初始化模型
 </script>
