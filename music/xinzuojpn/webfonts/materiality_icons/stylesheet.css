@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'materiality icons';
+	src: url('materiality-icons.eot');
+	src: url('materiality-icons.eot?#iefix') format('embedded-opentype'),
+		url('materiality-icons.woff') format('woff'),
+		url('materiality-icons.ttf') format('truetype'),
+		url('materiality-icons.svg') format('svg');
+}
