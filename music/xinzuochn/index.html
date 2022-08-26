@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html style="scroll-behavior: smooth;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+
+body {
+	background-image: url(https://luotianyi120712.github.io/tianyi/music/xinzuojpn/background.png);
+	  background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-position: center center;
+	 background-attachment: fixed;
+	  background-size: cover;
+}
+body,td,th {
+	font-family: material-icons;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 100;
+}
+</style>
+<style>
+
+  #canvas {
+                position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: none;
+        }
+        .content{
+      position: absolute;
+    z-index: 11;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.splash{
+  position: relative;
+  }
+  img#qq {
+    width: 128px;
+    background-size: cover;
+    border-radius: 200px;
+    box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+    border: 3px solid #00BFFF;
+    opacity: 1;
+    margin: 0 auto;
+	margin-bottom: 20px;
+	transition: all 1.0s;  
+}
+#qq:hover {
+    box-shadow: 0 0 10px #00BFFF;
+    -webkit-box-shadow: 0 0 19px #00BFFF;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg); 	/* IE 9 */
+    -moz-transform:rotate(360deg); 	/* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 	/* Opera */
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+</style>
+
+<meta http-equiv="”X-UA-Compatible”" content="”IE=edge,chrome=1”">
+<link rel="SHORTCUT ICON" href="https://luotianyi120712.github.io/tianyi/ICO.ico">
+
+<html lang="zh" style="scroll-behavior: smooth;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="renderer" content="webkit">
+
+<meta id="color_chrome" name="theme-color" content="#66CCFF">
+<meta id="color_safari" name="apple-mobile-web-app-status-bar-style" content="#66CCFF">
+<link rel="stylesheet" type="text/css" href="https://luotianyi120712.github.io/tianyi/mdui.min.css">
+<link rel="stylesheet" type="text/css" href="https://luotianyi120712.github.io/tianyi/materiality.min.css">
+<link rel="stylesheet" type="text/css" href="https://luotianyi120712.github.io/tianyi/highlight.min.css">
+<script type="text/javascript" src="https://luotianyi120712.github.io/tianyi/mdui.min.js"></script>
+<script type="text/javascript" src="https://luotianyi120712.github.io/tianyi/smoothscroll.min.js" defer=""></script>
+<script type="text/javascript" src="https://luotianyi120712.github.io/tianyi/highlight.min.js" defer=""></script>
+<script type="text/javascript" src="https://luotianyi120712.github.io/tianyi/materiality.min.js" defer=""></script>
+<script type="text/javascript" src="https://luotianyi120712.github.io/tianyi/darkmode.min.js" defer=""></script>
+<link rel="Shortcut Icon" href="https://luotianyi120712.github.io/tianyi/ICO.ico">
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-indigo">
+<header class="mdui-appbar mdui-appbar-fixed">
+<div class="mdui-toolbar mdui-color-theme">
+<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: &#39;#drawer&#39;, swipe: true}"><i class="mdui-icon materiality-icons" style="font-family: 'materiality icons'"></i></span>
+<a href="https://luotianyi120712.github.io/tianyi/" class="mdui-typo-headline"> </a>
+<div class="mdui-toolbar-spacer"></div>
+<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" id="dark_toggle_btn" style="font-family: 'MiSans Light'" mdui-tooltip="{content: &#39;切换为暗色模式&#39;}" onclick="toggle()"><i class="mdui-icon materiality-icons" id="dark_toggle_icon" style="font-family: 'materiality icons'"></i></span>
+
+<div class="mdui-list" mdui-collapse="{accordion: true}">
+<div class="mdui-divider"></div>
+
+</div>
+</div>
+</header>
+<div class="mdui-drawer" id="drawer">
+<div class="billboard">
+<div class="logo mdui-m-y-2 mdui-m-l-2" style="background:url(&#39;https://luotianyi120712.github.io/tianyi/logo.png&#39;);background-size:contain"></div>
+<div class="description mdui-m-x-2 mdui-text-color-white-text mdui-valign" style="font-family: 'MiSans Light'">华风夏韵，洛水天依</div>
+</div>	
+<div class="mdui-list" mdui-collapse="{accordion: true}">
+<div class="mdui-divider"></div>
+<a href="https://luotianyi120712.github.io/tianyi/home.html" class="mdui-list-item mdui-ripple" id="home-url">
+<i class="mdui-list-item-icon mdui-icon materiality-icons" style="font-family: 'materiality icons'"></i>
+<div class="mdui-list-item-content mdui-m-r-4" style="font-family: 'MiSans Light'">首页</div>
+</a>
+</div>
+
+</div>
+<div class="page-content">
+<div class="translate-box translate-box-hidden"></div>
+<div class="mdui-container content-show" id="main">
+<div class="anchor" id="top"></div>
+<div class="mdui-card mdui-hoverable mdui-m-y-3">
+<div class="mdui-card-primary">
+<div class="mdui-card-primary-title" style="font-family: 'MiSans Light'"><a class="mdui-text-color-theme-accent">洛天依 - 心做し(cover:GUMI)</a></div>
+<audio controls="controls" >
+  <source src="心做し(中文版).wav" type="audio/wav">
+</audio>
+<h1><div class="anchor" id="1-anchor" style="font-family: 'MiSans Heavy'"></div>歌词</h1>
+  <p style="font-family: 'MiSans Light'">心做し - 洛天依</p>
+  <p style="font-family: 'MiSans Light'">呐 如果说 能将一切都舍弃的话</p>
+  <p style="font-family: 'MiSans Light'">笑着 活下去就会变轻松了吗</p>
+  <p style="font-family: 'MiSans Light'">胸口又再次痛了起来</p>
+  <p style="font-family: 'MiSans Light'">够了 什么都别再说了</p>
+  <p style="font-family: 'MiSans Light'">呐 如果说 一切都能忘却的话</p>
+  <p style="font-family: 'MiSans Light'">不再哭泣 活下去这事会变轻松吗</p>
+  <p style="font-family: 'MiSans Light'">然而那般的事不可能的呢</p>
+  <p style="font-family: 'MiSans Light'">够了 什么都别给我看</p>
+  <p style="font-family: 'MiSans Light'">就算怎么地去接近你</p>
+  <p style="font-family: 'MiSans Light'">我的心脏也是仅此唯一</p>
+  <p style="font-family: 'MiSans Light'">太残酷了 太残酷了</p>
+  <p style="font-family: 'MiSans Light'">干脆将我的身体</p>
+  <p style="font-family: 'MiSans Light'">破坏吧 撕裂吧</p>
+  <p style="font-family: 'MiSans Light'">随你喜欢处置吧</p>
+  <p style="font-family: 'MiSans Light'">怎样呼叫 怎样挣扎</p>
+  <p style="font-family: 'MiSans Light'">怎样哭得双眼红肿也好</p>
+  <p style="font-family: 'MiSans Light'">你还是 紧抱着我</p>
+  <p style="font-family: 'MiSans Light'">永远不分开</p>
+  <p style="font-family: 'MiSans Light'">够了啊</p>
+  <p style="font-family: 'MiSans Light'">呐 如果说</p>
+  <p style="font-family: 'MiSans Light'">我的愿望可以得以实现</p>
+  <p style="font-family: 'MiSans Light'">我想要 得到与你相同的事物呢</p>
+  <p style="font-family: 'MiSans Light'">可是因为对我而言它并不存在</p>
+  <p style="font-family: 'MiSans Light'">所以啊 至少希望你来这</p>
+  <p style="font-family: 'MiSans Light'">就算有多少被你所爱</p>
+  <p style="font-family: 'MiSans Light'">我的心脏也是仅此唯一</p>
+  <p style="font-family: 'MiSans Light'">住手吧 住手吧</p>
+  <p style="font-family: 'MiSans Light'">不要对我那么温柔啊</p>
+  <p style="font-family: 'MiSans Light'">不管怎样 我也无法去理解你啊</p>
+  <p style="font-family: 'MiSans Light'">好痛啊 好痛啊 用言语来告诉我吧</p>
+  <p style="font-family: 'MiSans Light'">这样的事 我不懂啊</p>
+  <p style="font-family: 'MiSans Light'">不要让我 独自一人</p>
+  <p style="font-family: 'MiSans Light'">太残酷了 太残酷了</p>
+  <p style="font-family: 'MiSans Light'">干脆将我的身体</p>
+  <p style="font-family: 'MiSans Light'">破坏吧 撕裂吧</p>
+  <p style="font-family: 'MiSans Light'">随你喜欢处置吧</p>
+  <p style="font-family: 'MiSans Light'">怎样呼叫 怎样挣扎</p>
+  <p style="font-family: 'MiSans Light'">怎样哭得双眼红肿也好</p>
+  <p style="font-family: 'MiSans Light'">你还是 紧抱着我</p>
+  <p style="font-family: 'MiSans Light'">永远不分开</p>
+  <p style="font-family: 'MiSans Light'">够了啊</p>
+  <p style="font-family: 'MiSans Light'">呐 如果说 我拥有内心的话</p>
+  <p style="font-family: 'MiSans Light'">那我怎样 去寻找那物才好呢</p>
+  <p style="font-family: 'MiSans Light'">稍作微笑的你言道</p>
+  <p style="font-family: 'MiSans Light'">那个啊 就在这里啊</p>
+
+</div>
+	</div>
+	</div>
+
+
+<footer class="mdui-color-theme">
+  <div class="footer-icons mdui-col-xs-3 mdui-valign">
+</div>
+<div class="footer-copyright mdui-col-xs-6 mdui-valign">
+
+</div>
+<div class="footer-credit mdui-col-xs-3 mdui-valign">
+<div class="mdui-center">
+
+
+
+
+
+
+
+<div style="font-family: 'MiSans Light'">二次元ICP备 号</div>
+<div style="font-family: 'MiSans Light'">二次元公网安备 号</div>
+
+
+
+
+
+</div>
+</div>
+</footer>
+</div>
+<a class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide " id="scrolltop" href="#top"><img src="https://luotianyi120712.github.io/tianyi/TOP.png"></a>
+
+
+	
+	
+
+
+<title>洛天依 - 心做し(中文版)</title>
+    <link rel="stylesheet" href="https://luotianyi120712.github.io/tianyi/live2d/css/live2d.css" />
+<body>
+    <link rel="stylesheet" href="https://luotianyi120712.github.io/tianyi/live2d.css">
+<body>
+
+<div id="landlord">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+	<div id="sing"></div>
+    <div class="hide-button" style="display: none;">隐藏</div>
+	<div class="sing-button" id="sing-button" onclick="getsong()" style="display: none;">Sing</div>
+</div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = 'https://luotianyi120712.github.io/tianyi/'//此处修改成自己的域名
+</script>
+<script type="text/javascript" src="https://luotianyi120712.github.io/tianyi/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="https://luotianyi120712.github.io/tianyi/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://luotianyi120712.github.io/tianyi/live2d/model/tianyi/model.json.php");
+</script>
+<!-- Live2DCubismCore script -->
+<script src="https:/https://luotianyi120712.github.io/tianyi/live2dcubismcore.js"></script>
+<!-- Build script -->
+<script src="https:/https://luotianyi120712.github.io/tianyi/bundle.js"></script>
+<canvas id="live2d" width="500" height="500" class="live2d" style="position: fixed; opacity: 1; left: -110px; bottom: -125px; z-index: 99999; pointer-events: none;"></canvas>
+
+<script type="text/javascript">
+  var resourcesPath = 'https://cdn.jsdelivr.net/gh/x66ccff/lty-lv2d-v3@v1.2/'; // 指定资源文件（模型）保存的路径
+  var backImageName = ' '; // 指定背景图片
+  var modelDir = ['Hiyori']; // 指定需要加载的模型
+  initDefine(resourcesPath, backImageName, modelDir); // 初始化模型
+</script>
